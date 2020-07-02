@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Daftar Kartu</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+</head>
+
+<body style="background-color: #f5f5f5;">
+
+<form action="insertdbKartu.php" method="POST">
+
+    <ul class="nav flex-column shadow d-flex sidebar mobile-hid">
+          <li class="nav-item logo-holder">
+          <a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a>
+            <div class="text-center text-white logo py-4 mx-4">
+              <a class="text-white text-decoration-none" id="title" href="#"><img src="assets/img/LOGO.png" alt="logo pnj" height="110" width="145"></a>
+              <a class="text-white text-decoration-none" id="title" href="#">Politeknik Negeri Jakarta</a>
+            </div>
+        </li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="index.html"><i class="fas fa-tachometer-alt mx-3"></i><span class="text-nowrap mx-2">Beranda</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="beliTiket.html"><i class="fas fa-user mx-3"></i><span class="text-nowrap mx-2"> Beli Tiket</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="dataPenumpang.php"><i class="far fa-life-ring mx-3"></i><span class="text-nowrap mx-2">Data Penumpang</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="status.php"><i class="fas fa-archive mx-3"></i><span class="text-nowrap mx-2">Status</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="riwayat.php"><i class="fas fa-chart-bar mx-3"></i><span class="text-nowrap mx-2">Riwayat</span></a></li>
+        <li class="nav-item"><a class="nav-link active text-left text-white py-1 px-0" href="daftarkartu.html"><i class="fas fa-sign-out-alt mx-3"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2">Daftar Kartu</span></a></li>
+    </ul>
+    <div class="container article-clean">
+        <div class="row" style="background-color: #f5f5f5;">
+            <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                <div class="text-center intro">
+                    <h1 class="text-center"><strong>Rancang Bangun Sistem Pemantau Kursi Otomatis pada Kereta Api Berbasis IoT</strong><br></h1>
+                    <p class="text-center"> </p>
+                </div>
+                <div class="text"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+          <div class="row text-left">
+              <div class="col-md-6 col-xl-4 offset-xl-2" style="background-color: #ffffff;"><label class="col-form-label" style="margin-top: 6px;"><strong>Nomor Kartu</strong></label></div>
+              <div class="col-md-6 col-xl-4 offset-xl-0" style="height: 50px;background-color: #ffffff;">
+                <input type="text" name="UID" style="margin-top: 9px;padding-right: 120px;"></div>
+          </div>
+            <div class="row" style="border-bottom: #00000f;">
+                <div class="col-md-6 col-xl-4 offset-xl-2" style="/*border-bottom: #000000;*/background-color: #ffffff;"><label class="col-form-label" style="margin-top: 6px;"><strong>Nomor Identitas</strong></label></div>
+                <div class="col-md-6 col-xl-4 offset-xl-0" style="height: 50px;background-color: #ffffff;">
+                  <input type="text" name="idPenumpang" style="margin-top: 9px;padding-right: 120px;"></div>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-6 col-xl-4 offset-xl-2" style="background-color: #ffffff;"><label class="col-form-label" style="margin-top: 6px;"><strong>Nama Penumpang</strong></label></div>
+                <div class="col-md-6 col-xl-4 offset-xl-0" style="height: 50px;background-color: #ffffff;">
+                  <input type="text" name="username" style="margin-top: 9px;padding-right: 120px;"></div>
+            </div>
+
+
+            <!-- code lama nya
+            <div class="row">
+                <div class="col-md-6 col-xl-4 offset-xl-2" style="background-color: #ffffff;"><label class="col-form-label" style="margin-top: 6px;"><strong>No Kursi</strong></label></div>
+                <div class="col-md-6 col-xl-4 offset-xl-0" style="height: 50px;background-color: #ffffff;">
+                <input type="text" name="nokursi" style="margin-top: 9px;padding-right: 120px;"></div>
+            </div>
+          -->
+
+        </div>
+    </div>
+    <div>
+      <div class="container">
+          <div class="row" style="height: 60px;">
+              <div class="col-md-12 col-xl-4 offset-xl-2 text-justify" style="padding-right: 20px;padding-left: 0px;"><button class="btn btn-primary" type="Submit" name="Submit" value="Submit" style="padding-right: 15px;margin: 0px;margin-top: 10px;margin-right: 55px;">Submit</button></div>
+          </div>
+      </div>
+  </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>
